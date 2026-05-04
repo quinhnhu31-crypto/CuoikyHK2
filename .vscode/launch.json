@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open WebW3School.html",
-            "file": "e:\\Website\\WebW3School.html"
+            "name": "Open index.html",
+            "file": "e:\\Website\\index.html"
         }
     ]
 }
