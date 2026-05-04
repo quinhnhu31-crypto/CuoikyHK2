@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>HTML Tutorial</title>
+<link rel="stylesheet" href="../Layout.css">
+<link rel="stylesheet" href="Begin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+<link rel="stylesheet" href="Layout.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>hljs.highlightAll();</script>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo">W3School</div>
+
+  <div class="top-links">
+    <span id="tutorialBtn">
+  Tutorials <span class="arrow">▾</span>
+</span>
+    <span id="referenceBtn">
+  References <span class="arrow">▾</span>
+</span>
+    <span id="exerciseBtn">
+      Exercises <span class="arrow">▾</span>
+      </span>
+    <span>Certificates ▾</span>
+</div>
+<div id="tutorials-menu" class="tutorials-dropdown">
+  <div class="dropdown-header">
+    <h2>Tutorials</h2>
+    <div class="filter-container">
+      <input type="text" placeholder="Filter...        ">
+      <i class="fa-solid fa-xmark close-menu" id="closeBtn"></i>
+    </div>
+  </div>
+
+  <div class="dropdown-content">
+    <div class="column">
+  <h3>HTML and CSS</h3>
+  <a href="#"><b>Learn HTML</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn CSS</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn RWD</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Bootstrap</b> <span>Overview</span></a>
+  <a href="#"><b>Learn W3.CSS</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Sass</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Colors</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Icons</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn SVG</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Canvas</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Graphics</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn UTF-8 and Emojis</b> <span>Reference</span></a>
+  <a href="#"><b>Learn How To</b> <span>Tutorial</span></a>
+
+  <h3>Data Analytics</h3>
+  <a href="#"><b>Learn AI</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Machine Learning</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn ChatGPT-3.5</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn ChatGPT-4</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Google Bard</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn DSA</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Data Science</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn NumPy</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Pandas</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn SciPy</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Matplotlib</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Statistics</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Excel</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Google Sheets</b> <span>Tutorial</span></a>
+</div>
+
+<div class="column">
+  <h3>JavaScript</h3>
+  <a href="#"><b>Learn JavaScript</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn React</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn jQuery</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Vue</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn Angular</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn AngularJS</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn JSON</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn AJAX</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn AppML</b> <span>Tutorial</span> <span>Reference</span></a>
+  <a href="#"><b>Learn W3.JS</b> <span>Tutorial</span> <span>Reference</span></a>
+
+  <h3>Web Building</h3>
+<a href="#"><b>Create a Website</b></a>
+<a href="#"><b>Create a Server</b> <span class="tag-new">NEW</span></a>
+<a href="#"><b>Where To Start</b></a>    
+<a href="#"><b>Web Templates</b></a>
+<a href="#"><b>Web Statistics</b></a>
+<a href="#"><b>Web Certificates</b></a>
+<a href="#"><b>Web Development</b></a>
+<a href="#"><b>Introduction to Programming</b></a>
+<a href="#"><b>Introduction to HTML&CSS</b></a>
+<a href="#"><b>Code Editor</b></a>
+<a href="#"><b>Test Your Typing Speed</b></a>
+<a href="#"><b>Play a Code Game</b></a>
+<a href="#"><b>Web Development Tools</b></a>
+<a href="#"><b>Cyber Security</b></a>
+<a href="#"><b>Accessibility</b></a>
+<a href="#"><b>Join our Newsletter</b></a>
+</div>
+
+<div class="column">
+  <h3>Backend</h3>
+  <a href="#"><b>Learn Python</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn SQL</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Java</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn PHP</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn C</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn C++</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn C#</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn R</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Kotlin</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Rust</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Go</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Django</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn PostgreSQL</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn TypeScript</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn ASP</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Node.js</b> <span>Tutorial</span><span>Reference</span></a>
+  <a href="#"><b>Learn Raspberry Pi</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Swift</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Git</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn Bash</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn MongoDB</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn AWS Cloud</b> <span>Tutorial</span></a>
+  <a href="#"><b>Learn XML</b> <span>Tutorial</span><span>Reference</span></a>
+</div>
+  </div>
+</div>
+<div id="references-menu" class="tutorials-dropdown">
+  <div class="dropdown-header">
+    <h2>References</h2>
+    <div class="filter-container">
+      <input type="text" placeholder="Filter...">
+      <i class="fa-solid fa-xmark close-menu" id="closeReferenceBtn"></i>
+    </div>
+  </div>
+
+  <div class="dropdown-content">
+    <div class="column">
+      <h3>HTML and CSS</h3>
+    <a href="#">HTML Tags <span class="ref-text">Reference</span></a>
+    <a href="#">HTML DOM <span>Reference</span></a>
+    <a href="#">W3.CSS <span class="ref-text">Reference</span></a>
+    <a href="#">Bootstrap 3 <span class="ref-text">Reference</span></a>
+    <a href="#">Bootstrap 4 <span class="ref-text">Reference</span></a>
+    <a href="#">Color Names</a>
+    <a href="#">Icons <span class="ref-text">Reference</span></a>
+    <a href="#">SVG <span class="ref-text">Reference</span></a>
+    <a href="#">Canvas <span class="ref-text">Reference</span></a>
+    <a href="#">Sass <span class="ref-text">Reference</span></a>
+    </div>
+
+    <div class="column">
+      <h3>JavaScript</h3>
+    <a href="#">JavaScript<span>Reference</span></a>
+    <a href="#">HTML DOM <span>Reference</span></a>
+    <a href="#">jQuery <span>Reference</span></a>
+    <a href="#">Vue <span>Reference</span></a>
+    <a href="#">Angular <span>Reference</span></a>
+    <a href="#">JSON <span>Reference</span></a>
+    <a href="#">AppML <span>Reference</span></a>
+    <a href="#">W3.JS <span>Reference</span></a>
+    </div>
+
+    <div class="column">
+      <h3>Backend</h3>
+    <a href="#">Python <span>Reference</span></a>
+    <a href="#">SQL <span>Reference</span></a>
+    <a href="#">MySQL <span>Reference</span></a>
+    <a href="#">PHP <span>Reference</span></a>
+    <a href="#">Java <span>Reference</span></a>
+    <a href="#">C <span>Reference</span></a>
+    <a href="#">C++ <span>Reference</span></a>
+    <a href="#">Django <span>Reference</span></a>
+    </div>
+  </div>
+</div>
+<div id="exercises-menu" class="tutorials-dropdown">
+  <div class="dropdown-header">
+    <h2>Exercises</h2>
+    <div class="filter-container">
+      <input type="text" placeholder="Filter...">
+      <i class="fa-solid fa-xmark close-menu" id="closeExerciseBtn"></i>
+    </div>
+  </div>
+
+  <div class="dropdown-content">
+    <div class="column">
+      <h3>HTML and CSS</h3>
+      <a href="#"><b>HTML</b> <span>Exercise</span> <span>Quiz</span> <span>Challenge</span></a>
+      <a href="#"><b>CSS</b> <span>Exercise</span> <span>Quiz</span> <span>Challenge</span></a>
+      <a href="#"><b>Bootstrap 3</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Bootstrap 4</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Bootstrap 5</b> <span>Exercise</span> <span>Quiz</span></a>
+
+      <h3>Data Analytics</h3>
+      <a href="#"><b>DSA</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>NumPy</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Pandas</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>SciPy</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Excel</b> <span>Exercise</span> <span>Quiz</span></a>
+    </div>
+
+    <div class="column">
+      <h3>JavaScript</h3>
+      <a href="#"><b>JavaScript</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>React</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>jQuery</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Vue</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Angular</b> <span>Exercise</span> <span>Quiz</span></a>
+    </div>
+
+    <div class="column">
+      <h3>Backend</h3>
+      <a href="#"><b>Python</b> <span>Exercise</span> <span>Quiz</span> <span>Challenge</span></a>
+      <a href="#"><b>SQL</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>MySQL</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>PHP</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Java</b> <span>Exercise</span> <span>Quiz</span> <span>Challenge</span></a>
+      <a href="#"><b>C</b> <span>Exercise</span> <span>Quiz</span> <span>Challenge</span></a>
+      <a href="#"><b>C++</b> <span>Exercise</span> <span>Quiz</span> <span>Challenge</span></a>
+      <a href="#"><b>C#</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>R</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Kotlin</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Django</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Node.js</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>PostgreSQL</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>TypeScript</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Git</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Bash</b> <span>Exercise</span> <span>Quiz</span></a>
+      <a href="#"><b>Go</b> <span>Exercise</span></a>
+      <a href="#"><b>MongoDB</b> <span>Exercise</span></a>
+    </div>
+  </div>
+</div>
+  <div class="left-search">
+  <div class="search-container">
+    <input type="text" id="mainSearch" placeholder="Search...">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+  
+  <div class="more-menu-wrapper">
+    <div class="dots-circle">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="see-more-label">See More</div>
+  </div>
+</div>
+
+  <div class="right-links">
+    <span>Bootcamps</span>
+    <span>Spaces</span>
+    <span>Teachers</span>
+    <span>Upgrade</span>
+    <span>Get Certified</span>
+    <span class="signin">
+      <a href="../Sign.html">Sign In</a></span>
+  </div>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+  <a href="Html/HTML.html">HTML</a>
+  <a>CSS</a>
+  <a>JAVASCRIPT</a>
+  <a>SQL</a>
+  <a>PYTHON</a>
+  <a>JAVA</a>
+  <a>PHP</a>
+  <a>HOW TO</a>
+  <a>W3.CSS</a>
+  <a>C</a>
+  <a>C++</a>
+  <a>C#</a>
+  <a>BOOTSTRAP</a>
+  <a>REACT</a>
+  <a>MYSQL</a>
+  <a>JQUERY</a>
+  <a>EXCEL</a>
+  <a>XML</a>
+  <a>DJANGO</a>
+  <a>NUMPY</a>
+  <a>PANDAS</a>
+  <a>NODEJS</a>
+  <a>DSA</a>
+  <a>TYPESCRIPT</a>
+  <a>ANGULAR</a>
+  <a>ANGULARJS</a>
+  <a>GIT</a>
+  <a>POSTGRESQL</a>
+  <a>MONGODB</a>
+  <a>ASP</a>
+  <a>AI</a>
+  <a>R</a>
+  <a>GO</a>
+  <a>KOTLIN</a>
+  <a>SWIFT</a>
+  <a>SASS</a>
+  <a>VUE</a>
+  <a>GEN AI</a>
+  <a>SCIPY</a>
+  <a>AWS</a>
+  <a>CYBERSECURITY</a>
+</div>
+<section class="where-to-start-section">
+    <div class="start-header">
+        <h2>Where To Start</h2>
+        <p>To become a web developer, start with the subjects below,<br>in the following order:</p>
+    </div>
+
+    <div class="timeline-container">
+        <div class="start-blocks">
+            <div class="block html-block">HTML</div>
+            <div class="block css-block">CSS</div>
+            <div class="block js-block">JavaScript</div>
+        </div>
+
+        <div class="start-line">
+            <div class="dot active-dot"></div>
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="start-details">
+            <div class="details-card">
+                <h3>1. Create your first web page</h3>
+                <p>The first thing you have to learn, is HTML, which is the standard markup language for creating web pages.</p>
+                <button class="btn-green">Learn HTML</button>
+            </div>
+            
+            <div class="details-card">
+                <h3>2. Style your web page</h3>
+                <p>The next step is to learn CSS, to set the layout of your web page with beautiful colors, fonts, and much more.</p>
+                <button class="btn-green">Learn CSS</button>
+            </div>
+            
+            <div class="details-card">
+                <h3>3. Make your web page interactive</h3>
+                <p>After studying HTML and CSS, you should learn JavaScript to create dynamic and interactive web pages for your users.</p>
+                <button class="btn-green">Learn JavaScript</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="next-section">
+    <h1>What's Next?</h1>
+
+    <p>
+        Now you know how to use HTML, CSS, and JavaScript
+        to create, style, and make interactive web pages.
+    </p>
+
+    <p>
+        The next step is to <span class="highlight">publish your website</span>,
+        so that the rest of the world can see your work.
+    </p>
+
+    <p>
+        There are tons of hosting services to choose from.<br>
+        We have made one for you, free to try:
+    </p>
+</div>
+<section class="spaces-section">
+
+    <h1>W3Schools Spaces</h1>
+    <p class="subtitle">
+        Create your own website with <span>W3Schools Spaces</span>:
+    </p>
+
+    <!-- CHỖ DÁN ẢNH -->
+    <div class="image-box">
+         <img src="../img/dynamicspaces.gif" alt="spaces"> 
+    </div>
+
+    <button class="btn">Learn More</button>
+
+    <h2>How it works</h2>
+
+<div class="steps">
+
+    <div class="step">
+        <div class="icon"><i class="fa-regular fa-window-maximize"></i></div>
+        <p>1. Join W3Schools - and<br>create a space</p>
+    </div>
+
+    <div class="step">
+        <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+        <p>2. Choose a template - or<br>start from scratch</p>
+    </div>
+
+    <div class="step">
+        <div class="icon"><i class="fa-solid fa-code"></i></div>
+        <p>3. Edit code directly in your<br>browser</p>
+    </div>
+
+    <div class="step">
+        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+        <p>4. Share your web page<br>with the world</p>
+        
+    </div>
+    
+
+    </div>
+
+</section>
+<section class="hello">
+    <h1>Hello,<br>Front-End Developer!</h1>
+
+    <p>
+        People who create websites and web applications for a living,
+        are called Front-End Developers.
+    </p>
+
+    <p>
+        <b>Tip:</b> Many Front-End Developers also have basic knowledge of
+        different CSS and JavaScript frameworks and libraries, like
+        Bootstrap, SASS (CSS pre-processor), jQuery and React,
+        and the popular version control system, Git.
+    </p>
+</section>
+
+<section class="backend">
+    <h2>What About Back-End?</h2>
+
+    <p>
+        Front-end development refers to the client-side (how a web page looks).
+        Back-end development refers to the server-side (how a web page works).
+    </p>
+
+    <p>
+        Front-end code is used to create static websites, where the purpose is to display the web page.
+        However, if you want to make your website dynamic (manage files and databases, add contact forms,
+        control user-access, etc.), you need to learn a back-end programming language, like PHP or Python,
+        and use SQL to communicate with databases.
+    </p>
+
+    <p>
+        If you already have some backend experience, you should know that you can use
+        W3Schools Spaces to build, test and deploy backend code as well.
+    </p>
+
+    <button class="btn-dark">Learn More</button>
+</section>
+</div>
+
+<script src="Html.js"></script>
+    <script src="Html.js"></script>
+<footer class="footer">
+  <div class="footer-header">
+    <div class="footer-logo">
+      <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="W3Schools Logo">
+    </div>
+
+    <div class="footer-top-links">
+      <span>PLUS</span>
+      <span>SPACES</span>
+      <span>GET CERTIFIED</span>
+      <span>FOR TEACHERS</span>
+      <span>BOOTCAMPS</span>
+      <span>CONTACT US</span>
+    </div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h3>Top Tutorials</h3>
+      <a href="#">HTML Tutorial</a>
+      <a href="#">CSS Tutorial</a>
+      <a href="#">JavaScript Tutorial</a>
+      <a href="#">SQL Tutorial</a>
+      <a href="#">Python Tutorial</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Top References</h3>
+      <a href="#">HTML Reference</a>
+      <a href="#">CSS Reference</a>
+      <a href="#">JavaScript Reference</a>
+      <a href="#">SQL Reference</a>
+      <a href="#">Python Reference</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Top Examples</h3>
+      <a href="#">HTML Examples</a>
+      <a href="#">CSS Examples</a>
+      <a href="#">JavaScript Examples</a>
+      <a href="#">SQL Examples</a>
+      <a href="#">Python Examples</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Get Certified</h3>
+      <a href="#">HTML Certificate</a>
+      <a href="#">CSS Certificate</a>
+      <a href="#">JavaScript Certificate</a>
+      <a href="#">Python Certificate</a>
+      <a href="#">Java Certificate</a>
+    </div>
+  </div>
+
+  <div class="footer-social">
+    <a href="https://www.youtube.com/@w3schools" target="_blank">
+  <i class="fa-brands fa-youtube"></i>
+</a>
+<a href="https://www.linkedin.com/company/w3schools.com/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://discord.com/invite/w3schools" target="_blank">
+    <i class="fa-brands fa-discord"></i>
+  </a>
+  <a href="https://www.facebook.com/w3schoolscom/" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+    <a href="https://www.instagram.com/w3schools.com_official/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+    <span>FORUM</span>
+    <span>ABOUT</span>
+    <span>ACADEMY</span>
+  </div>
+  <p class="footer-desc">
+    W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness
+of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookies and privacy policy.
+  </p>
+  <p class="footer-copy">
+    Copyright 1999-2026 by Refsnes Data.
+  </p>
+</footer>
+
+</body>
+</html>

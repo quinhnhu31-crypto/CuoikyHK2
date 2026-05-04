@@ -1,0 +1,1503 @@
+*{box-sizing:border-box}
+body{
+margin:0;font-family:Arial, sans-serif;
+
+}
+
+/* TOP WHITE BAR */
+.topbar{
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  padding:8px 16px;
+  gap:15px;
+  border-bottom:1px solid #eee;
+position:sticky;
+  top:0;
+  z-index:1000;
+
+}
+.logo{color:#04AA6D;font-weight:bold;font-size:20px}
+.top-links{display:flex;gap:15px;font-size:14px}
+.top-links span{
+  cursor:pointer;
+  padding:8px 10px;
+}
+
+.top-links span:hover{
+  background:#04AA6D;
+  color:white;
+  border-radius:4px;
+}
+#tutorialBtn {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+/* hover xanh lá */
+#tutorialBtn:hover {
+  background: #04AA6D;
+  color: white;
+}
+
+/* khi menu mở */
+#tutorialBtn.active {
+  background: #282A35;
+  color: white;
+}
+
+/* arrow */
+#tutorialBtn .arrow {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.25s ease;
+}
+
+/* menu mở thì arrow quay lên */
+#tutorialBtn.active .arrow {
+  transform: rotate(180deg);
+}
+/* TOPBAR RIGHT */
+.right-links{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* SEARCH nằm kế Certificates */
+.left-search{
+  margin-left:20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.more-menu{
+  position:relative;
+  font-size:26px;
+  cursor:pointer;
+}
+.search-top input{
+  padding:6px 12px;
+  border-radius:20px;
+  border:1px solid #ccc;
+}
+.signin a{
+  background:#04AA6D;
+  color:white;
+  padding:6px 14px;
+  border: radius 8px;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+/* DARK MENU */
+.menu{
+  background:#282A35;
+  color:white;
+  display:flex;
+  overflow-x:auto;
+  position: sticky;
+  top: 64px;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.menu a{
+  padding:12px 14px;
+  white-space:nowrap;
+  color:white;
+  text-decoration:none;
+  font-size:13px;
+}
+.menu a:hover{background:#000}
+
+/* HERO */
+.hero{
+  background:#282A35;
+  color:white;
+  text-align:center;
+  padding:90px 20px 140px;
+  position:relative;
+}
+.hero h1{
+  font-size:70px;
+  margin:0;
+  font-weight:bold;
+}
+.hero p{
+  color:#FFF4A3;
+  margin:15px 0;
+  font-size:20px;
+}
+
+.search-box{
+  display:flex;
+  justify-content:center;
+  margin-top:25px;
+}
+.search-box input{
+  padding:16px;
+  border:none;
+  border-radius:30px 0 0 30px;
+  width:320px;
+}
+.search-box button{
+  padding:16px 22px;
+  border:none;
+  background:#04AA6D;
+  color:white;
+  border-radius:0 30px 30px 0;
+}
+
+.hero a{
+  display:inline-block;
+  margin-top:20px;
+  color:white;
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+/* WAVE */
+.hero::after{
+  content:"";
+  position:absolute;
+  bottom:-1px;
+  left:0;
+  width:100%;
+  height:140px;
+  background:#d9eee1;
+  clip-path:path("M0,90 C400,150 1000,50 2000,100 L2000,200 L0,200 Z");
+}
+
+/* SECTION */
+.section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:100px;
+  padding:80px 10%;
+  flex-wrap:wrap;
+}
+.section:nth-child(even){background:#f1f1f1}
+
+.left{
+  max-width:400px;
+  text-align:center;
+}
+.left h2{
+  font-size:70px;
+  margin-bottom:20px;
+}
+.left p{
+  margin:15px 0 25px;
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  margin:12px auto;
+  padding:14px;
+  width:220px;
+  border-radius:25px;
+  text-align:center;
+  transition:0.25s;
+  text-decoration: none;
+}
+.btn:hover{filter:brightness(0.9)}
+.btn:active{filter:brightness(0.8)}
+
+.green{background:#04AA6D;color:white}
+.dark{background:#595f7f;color:white}
+.pink{background:#ffc0c7; color: black}
+.yellow{background:#fff4a3}
+
+.code{
+  background:#e7e9eb;
+  padding:25px;
+  border-radius:10px;
+  width:350px;
+}
+.code pre{
+  background:white;
+  padding:10px;
+  border-left:5px solid #04AA6D;
+  overflow:auto;
+}
+
+/* BIG CARD */
+.cards-big{
+  background:#282A35;
+  padding:70px 6%;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+.big-card{
+  padding:60px 40px;
+  border-radius:6px;
+  text-align:center;
+  transition:0.25s;
+}
+.big-card:hover{transform:translateY(-4px)}
+.big-card h3{font-size:56px}
+
+.mini-btn{
+  display:inline-block;
+  background:#282A35;
+  color:white;
+  padding:16px 40px;
+  border-radius:30px;
+  transition:0.25s;
+}
+.mini-btn:hover{filter:brightness(1.1)}
+
+.small-grid{
+  background:#282A35;
+  padding:0 6% 80px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:35px;
+}
+.small-card{
+  padding:50px 20px;
+  text-align:center;
+  border-radius:6px;
+  font-size:34px;
+  font-weight:bold;
+  transition:filter 0.25s;
+  cursor:pointer;
+}
+
+.small-card:hover{
+  filter:brightness(0.9);
+}
+.pink-card{background:#ffc0c7}
+.yellow-card{background:#fff4a3}
+.white-card{background:#f3ecea}
+.mint-card{background:#d9eee1}
+.cyan-card{background:#96d4d4}
+.light-card{background:#e7e9eb}
+/* Container tổng */
+.left-search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px 40px 10px 20px; 
+  border-radius: 50px; 
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container i {
+  position: absolute;
+  right: 15px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 2. Phần dấu 3 chấm và hiệu ứng hover */
+.more-menu-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dots-circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Hình tròn */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dots-circle:hover {
+  background-color: #f1f1f1;
+}
+
+/* 3. Nút "See More" mặc định ẩn */
+.see-more-label {
+  position: absolute;
+  left: 50px; /* Đẩy sang phải dấu 3 chấm */
+  background: #282a35;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  
+  /* Hiệu ứng ẩn/hiện */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: translateX(-10px);
+  z-index: 100;
+}
+
+/* Khi di chuột vào dấu 3 chấm thì hiện See More */
+.more-menu-wrapper:hover .see-more-label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.small-grid {
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.wide-card {
+    grid-column: span 2;
+    font-size: 26px; 
+}
+
+.grey-card { 
+    background-color: #d9eee1; 
+}
+.small-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+/* ===== TUTORIAL DROPDOWN ===== */
+.tutorials-dropdown {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 52px);
+  background: #282A35;
+  color: white;
+  z-index: 10000;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* mở menu */
+.tutorials-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* header cố định trong dropdown */
+.dropdown-header {
+  background: #282A35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+.dropdown-header h2 {
+  color: #FFF4A3;
+  font-size: 38px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* ô filter + close */
+.filter-container {
+  position: relative; 
+  width: 100%; 
+  display: flex;
+  justify-content: center; /* căn giữa input */
+}
+.close-menu {
+  position: absolute; 
+  right: 8%;           /* giữ bên phải header */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.filter-container input {
+  width: 260px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #555;
+  background: #3f414a;
+  color: white;
+  font-size: 14px;
+  display: block;
+}
+
+.filter-container input::placeholder {
+  color: #ccc;
+}
+
+.close-menu {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-menu:hover {
+  color: #04AA6D;
+}
+
+/* content */
+.dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 40px 8%;
+}
+
+.column h3 {
+  color: #FFF4A3;
+  font-size: 22px;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.column h3:not(:first-child) {
+  margin-top: 40px;
+}
+
+.column a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.column a b {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* chỉ hover vào Learn mới lên màu */
+.column a b:hover {
+  background: #fff8dc;
+  color: #282A35;
+}
+
+/* Tutorial / Reference */
+.column a span {
+  font-size: 12px;
+  color: #FFF4A3;
+  background: transparent;
+  padding: 6px 10px;   /* khung ẩn sẵn */
+  border-radius: 8px;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.column a span:hover {
+  background: #04AA6D;
+  color: white;
+  text-decoration: none;
+}
+.tag-new {
+  background: #04AA6D !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .dropdown-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .filter-container input {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    grid-template-columns: 1fr;
+  }
+}
+/* LOGIN SECTION */
+.login-section{
+  background:#d9e8dc;
+  padding:80px 0;
+}
+
+.login-section .wrapper{
+  max-width:1100px;
+  margin:0 auto;
+  padding:18px 24px 30px;
+}
+
+.login-section h1{
+  text-align:center;
+  font-size:56px;
+  margin:0;
+  font-weight:800;
+}
+
+.login-section .subtitle{
+  text-align:center;
+  margin:22px auto 40px;
+  max-width:650px;
+  font-size:18px;
+  line-height:1.5;
+  font-weight:600;
+}
+
+.login-section .top-cards{
+  display:grid;
+  grid-template-columns:1fr 1.6fr 1.6fr;
+  gap:16px;
+}
+
+.login-section .card{
+  background:#f5f5f5;
+  border-radius:14px;
+  padding:18px;
+}
+
+.login-section .avatar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:80px;
+  height:146px;
+}
+
+.login-section .streak .days{
+  font-size:34px;
+  font-weight:700;
+  color:#f59e0b;
+}
+
+.login-section .row-dots{
+  display:flex;
+  justify-content:space-between;
+  margin-top:18px;
+  font-size:26px;
+}
+
+.login-section .league{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:146px;
+}
+
+.login-section .main-panel,
+.login-section .workspace{
+  background:#f5f5f5;
+  border-radius:14px;
+  padding:18px;
+  margin-top:16px;
+}
+
+.login-section .main-panel{
+  display:grid;
+  grid-template-columns:170px 1fr;
+  gap:14px;
+}
+
+.login-section .js-box{
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:20px;
+  text-align:center;
+}
+
+.login-section .lesson-box{
+  display:grid;
+  gap:10px;
+}
+
+.login-section .lesson-top{
+  border:1px solid #57c08a;
+  border-radius:10px;
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.login-section .continue-btn{
+  background:#10b26c;
+  color:#fff;
+  border:none;
+  padding:8px 18px;
+  border-radius:8px;
+  font-weight:700;
+}
+
+.login-section .lesson-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.login-section .mini{
+  border:1px solid #e1e1e1;
+  border-radius:8px;
+  padding:16px;
+  background:#fafafa;
+}
+
+.login-section .workspace-title{
+  margin-bottom:12px;
+  color:#555;
+}
+
+.login-section .workspace-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.login-section .shot{
+  height:120px;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.login-section .shot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.login-section .signup-wrap{
+  text-align:center;
+  margin-top:42px;
+}
+
+.login-section .signup{
+  background:#10b26c;
+  color:white;
+  border:none;
+  font-size:20px;
+  font-weight:800;
+  padding:15px 70px;
+  border-radius:999px;
+  cursor:pointer;
+}
+
+.login-section .signup:hover{
+  filter:brightness(0.95);
+}
+/* ===== CODE EDITOR SECTION ===== */
+.editor-section{
+  background:#282A35;
+  text-align:center;
+  padding:90px 20px;
+  color:white;
+}
+
+.editor-section h2{
+  font-size:60px;
+  margin:0;
+  font-weight:800;
+}
+
+.editor-section p{
+  font-size:20px;
+  margin:20px 0 50px;
+  font-weight:600;
+}
+
+.editor-preview{
+  max-width:1000px;
+  margin:0 auto;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.editor-preview img{
+  width:100%;
+  display:block;
+  border-radius:8px;
+}
+
+/* BUTTONS */
+.editor-buttons{
+  margin-top:35px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:18px;
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.editor-btn{
+  border:none;
+  padding:16px 28px;
+  font-size:15px;
+  font-weight:700;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.editor-btn:hover{
+  filter:brightness(0.8);
+}
+
+.green-btn{
+  background:#04AA6D;
+  color:white;
+}
+
+.yellow-btn{
+  background:#FFF4A3;
+  color:black;
+}
+/* ===== IMAGE SHOWCASE SECTION ===== */
+.image-showcase-section{
+  flex-direction:column;
+  gap:30px;
+  padding:100px 6%;
+}
+
+.showcase-image-wrap{
+  max-width:950px;
+  margin:40px auto 0;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.showcase-image-wrap img{
+  width:100%;
+  display:block;
+  border-radius:8px;
+}
+/* ===== W3SCHOOLS SPACES SECTION ===== */
+.spaces-section{
+  background:#f3f3f3;
+  text-align:center;
+  padding:50px 20px 100px;
+}
+
+.spaces-section h2{
+  font-size:50px;
+  margin-bottom:30px;
+  color:black;
+}
+
+.spaces-subtitle{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:30px;
+  color:black;
+}
+
+.spaces-subtitle a{
+  color:#04AA6D;
+}
+
+.spaces-text{
+  font-size:18px;
+  margin-bottom:45px;
+  color:black;
+}
+
+.spaces-image-box{
+  width:900px;
+  max-width:100%;
+  height:420px;
+  margin:0 auto 50px;
+  border:4px solid #e5e5e5;
+  border-radius:8px;
+}
+
+.spaces-image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* NÚT */
+.spaces-btn{
+  background:#04AA6D;
+  color:white;
+  border:none;
+  padding:20px 70px;
+  font-size:20px;
+  font-weight:700;
+  border-radius:999px;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.spaces-btn:hover{
+  filter:brightness(0.9);
+}
+
+#referenceBtn {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+#referenceBtn.active {
+  background: #282A35;
+  color: white;
+}
+
+#referenceBtn .arrow {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.25s ease;
+}
+
+#referenceBtn.active .arrow {
+  transform: rotate(180deg);
+}
+#references-menu .column a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: white; /* cực quan trọng */
+}
+
+/* chỉ chữ Reference vàng */
+#references-menu .column a span {
+  color: #FFF4A3;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+/* hover */
+#references-menu .column a:hover {
+  background: #FFF4A3;
+  color: black;
+}
+
+#references-menu .column a:hover span {
+  color: black;
+}
+/* ===== EXERCISE BUTTON ===== */
+#exerciseBtn {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+#exerciseBtn.active {
+  background: #282A35;
+  color: white;
+}
+
+#exerciseBtn .arrow {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.25s ease;
+}
+
+#exerciseBtn.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* ===== EXERCISE MENU ===== */
+#exercises-menu .column a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+#exercises-menu .column a b {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+#exercises-menu .column a span {
+  font-size: 12px;
+  color: #FFF4A3;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+
+/* ===== INFO BOX ===== */
+.info-boxes {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-box {
+  border: 1px solid white;
+  background: #343541;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.info-box:hover {
+  background: #FFF4A3;
+  color: #282A35;
+}
+/* COLOR PICKER SECTION */
+.color-picker-section {
+  background-color: #f3ecea;
+  text-align: center;
+  padding: 100px 50px;
+}
+
+.color-picker-section h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.color-picker-section p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.hex-container img {
+  width: 150px;
+  cursor: pointer;
+}
+.hex-container img:hover {
+opacity: 0.7;
+}
+/* CODE GAME SECTION */
+.code-game-section {
+  background-color: #96d4d4;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.code-game-section h2 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.code-game-section p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.game-preview img {
+  width: 130px;
+  margin-bottom: 30px;
+}
+.game-preview img:hover {
+  /* 3. Làm ảnh nhạt đi bằng cách giảm độ mờ (ví dụ còn 70% độ rõ) */
+  opacity: 0.7; 
+}
+.play-game-btn {
+  background-color: #282a35;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.play-game-btn:hover {
+  background-color: #000;
+}
+/* ===== EXERCISE BUTTON ACTIVE GIỐNG TUTORIAL ===== */
+#exerciseBtn {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+#exerciseBtn:hover {
+  background: #04AA6D;
+  color: white;
+}
+
+#exerciseBtn.active {
+  background: #282A35;
+  color: white;
+}
+
+#exerciseBtn .arrow {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.25s ease;
+}
+
+#exerciseBtn.active .arrow {
+  transform: rotate(180deg);
+}
+.plus-section {
+  background-color: #282A35;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid #383a42;
+}
+
+.plus-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.plus-subtitle {
+  color: #ffc0c7;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.plus-list {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.plus-list li {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.plus-list i {
+  color: #04AA6D;
+  margin-right: 10px;
+}
+
+.plus-btn {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Teachers Section */
+.teachers-section {
+  background-color: #282A35;
+  color: white;
+  padding: 100px 10%;
+}
+
+.teachers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.teachers-text h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.teacher-list {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-list li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.teacher-list i {
+  color: #04AA6D;
+}
+
+.teachers-image img {
+  max-width: 70%;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .teachers-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .teacher-list {
+    display: inline-block;
+    text-align: left;
+  }
+}
+/* HOW TO SECTION */
+.howto-section {
+  text-align: center;
+  padding: 80px 20px 0px;
+}
+
+.howto-section h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.howto-section p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.howto-section span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.browser-box {
+  width: 950px;
+  max-width: 100%;
+  margin: auto;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.browser-top {
+  background: #e5e5e5;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dots span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: block;
+}
+
+.dots span:nth-child(1) { background: #f44336; }
+.dots span:nth-child(2) { background: #ffeb3b; }
+.dots span:nth-child(3) { background: #4caf50; }
+
+.browser-url {
+  background: white;
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: left;
+  color: #666;
+  font-size: 14px;
+}
+
+.browser-image {
+  position: relative;
+}
+
+.browser-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 65px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  transition: background 0.25s ease;
+}
+.slide-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slide-btn.left {
+  left: 0;
+}
+
+.slide-btn.right {
+  right: 0;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+}
+
+.slide-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.slide-dots {
+  padding: 20px 0 30px;
+}
+
+.slide-dots span {
+  width: 16px;
+  height: 16px;
+  background: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background: #777 !important;
+}
+
+.stand-base {
+  width: 60px;
+  height: 90px;
+  background: #282A35;
+  margin: auto;
+}
+
+.learn-howto-btn {
+  background: #282A35;
+  color: white;
+  border: none;
+  padding: 15px 80px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.learn-howto-btn:hover{
+    background:#04AA6D;
+}
+.footer{
+    background:#282A35;
+    color:white;
+    padding:50px 70px 30px;
+}
+
+.footer-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:50px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.footer-logo img{
+    width:100px;
+}
+
+.footer-top-links{
+    display:  contents;
+    gap:35px;
+    color:#FFF4A3;
+    font-size:18px;
+    font-weight:600;
+    flex-wrap:wrap;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:40px;
+    margin-bottom:35px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.footer-column a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    margin-bottom:8px;
+    transition:0.3s;
+}
+
+.footer-column a:hover{
+    color:#04AA6D;
+}
+
+.footer-social{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    font-size:20px;
+    margin:30px 0;
+    flex-wrap:wrap;
+}
+
+.footer-social i,
+.footer-social span{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.footer-social i:hover,
+.footer-social span:hover{
+    color:#04AA6D;
+}
+
+.footer-desc,
+.footer-copy{
+    text-align:center;
+    font-size:14px;
+    color:#ddd;
+}
+.footer-top-links span:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFF4A3;
+}
+.search-container{
+  position: relative;
+}
+
+.search-suggestions{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+}
+
+.search-suggestions div{
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-suggestions div:hover{
+  background: #f1f1f1;
+}
+.search-box{
+  position: relative;
+}
+
+.search-box .search-suggestions{
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+}
+
+.search-box .suggestion-item{
+  padding: 12px 16px;
+  color: black;
+  cursor: pointer;
+}
+
+.search-box .suggestion-item:hover{
+  background: #f1f1f1;
+}
+a i{
+  color: white;
+}
+body{
+  overflow-x:hidden;
+}
+
+.card{
+  width:100%;
+  max-width:100%;
+}
+
+.card-container{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.topbar{
+  overflow-x:auto;
+}
